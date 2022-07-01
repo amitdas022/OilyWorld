@@ -1,1 +1,1 @@
-# This project intends to visualize the world's dependence on Russian Oil
+# This project visualizes the world's dependence on Russian Oil
