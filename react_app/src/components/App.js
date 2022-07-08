@@ -1,10 +1,14 @@
 import React from 'react';
-import './App.css'
 import NavBar from './NavBar';
+
+const inlineCSS = {
+  backgroundColor: '#C3C7CE',
+  
+};
 
 function App() {
     return (
-      <div className="App">
+      <div className="App" style={inlineCSS}>
           <NavBar />
       </div>
     );
