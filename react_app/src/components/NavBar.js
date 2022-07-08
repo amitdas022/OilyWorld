@@ -10,18 +10,20 @@ import FeedbackTwoToneIcon from '@mui/icons-material/FeedbackTwoTone';
 export default function NavBar() {
   const [value, setValue] = React.useState(0);
   return (
-    <Box sx={{ width: 1000 }}>
-      <BottomNavigation
-        showLabels
-        value={value}
-        onChange={(event, newValue) => {
-          setValue(newValue);
-        }}
-      >
-        <BottomNavigationAction label="Home" icon={<HomeTwoToneIcon />} />
-        <BottomNavigationAction label="Data Visualization" icon={<DataUsageTwoToneIcon />} />
-        <BottomNavigationAction label="Feedback" icon={<FeedbackTwoToneIcon />} />
-      </BottomNavigation>
-    </Box>
+    <div className='nav-bar-ui'>
+        <Box className='bottom-nav-bar-ui' sx={{ width: 1000 }}>
+        <BottomNavigation
+            showLabels
+            value={value}
+            onChange={(event, newValue) => {
+            setValue(newValue);
+            }}
+        >
+            <BottomNavigationAction label="Home" icon={<HomeTwoToneIcon />} />
+            <BottomNavigationAction label="Data Visualization" icon={<DataUsageTwoToneIcon />} />
+            <BottomNavigationAction label="Feedback" icon={<FeedbackTwoToneIcon />} />
+        </BottomNavigation>
+        </Box>
+    </div>
   );
 }
