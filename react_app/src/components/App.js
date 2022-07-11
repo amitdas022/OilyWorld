@@ -1,5 +1,7 @@
-import React from 'react';
+import * as React from 'react';
 import NavBar from './NavBar';
+import Layout from './Layout';
+
 
 const inlineCSS = {
   backgroundColor: '#C3C7CE',
@@ -8,9 +10,14 @@ const inlineCSS = {
 
 function App() {
     return (
-      <div className="App" style={inlineCSS}>
+      <>
+        <div className="AppBar" style={inlineCSS}>
           <NavBar />
-      </div>
+        </div>
+        <div className='LayoutApp'>
+          <Layout />
+        </div>
+      </>    
     );
   }
 
