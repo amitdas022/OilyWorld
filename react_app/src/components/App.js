@@ -1,6 +1,7 @@
 import * as React from 'react';
 import NavBar from './NavBar';
 import Layout from './Layout';
+import UralsCrude from './UralsCrude';
 
 
 const inlineCSS = {
@@ -13,6 +14,9 @@ function App() {
       <>
         <div className="AppBar" style={inlineCSS}>
           <NavBar />
+        </div>
+        <div className='UralsCrudeOil'>
+          <UralsCrude />
         </div>
         <div className='LayoutApp'>
           <Layout />
