@@ -8,7 +8,8 @@ import {
     XAxis,
     YAxis,
     Area,
-    Label
+    Label,
+    CartesianGrid
 } from 'recharts';
 import { Container } from '@mui/system';
  
@@ -280,10 +281,10 @@ function UralsCrude() {
                 </p>
             </Divider>
             <h1 className="text-heading">
-                Urals Crude Oil Prices
+                Brent vs Urals Crude Oil Price Comparision
             </h1>
             <Container className='firstChart'>
-                <ResponsiveContainer width="100%" aspect={2}>
+                <ResponsiveContainer width="100%" aspect={2} className='AreaChartOne'>
                     <AreaChart 
                         data={revData} 
                         margin={{
@@ -292,6 +293,7 @@ function UralsCrude() {
                             left: 0,
                             bottom: 15
                         }}>
+                        <CartesianGrid strokeDasharray="3 3" />
                         <XAxis dataKey="Date"  
                             rotate={0}
                             interval={0}/>
@@ -300,16 +302,17 @@ function UralsCrude() {
                         </YAxis>
                         <Legend />
                         <Tooltip />
-                        <Area name='Urals Crude Oil Price' stackId='1' dataKey="Price"
-                            stroke="#8884d8" activeDot={{ r: 5 }}
-                            fillOpacity='0.1'
+                        <Area type="monotone" name='Urals Crude Oil Price' stackId='1' dataKey="Price"
+                            stroke="#c61ee1" 
+                            fillOpacity='0.4'
                             isAnimationActive='true'
+                            fill='#c61ee1'
                             />
-                        <Area name='Brent Crude Oil Price'stackId='2' dataKey="B_Price"
-                            stroke="#ffc658" activeDot={{ r: 5 }}
-                            fillOpacity='0.1'
+                        <Area type="monotone" name='Brent Crude Oil Price'stackId='2' dataKey="B_Price"
+                            stroke="#1FA6E0" 
+                            fillOpacity='0.2'
                             isAnimationActive='true'
-                            fill='#ffc658'
+                            fill='#1FA6E0'
                             />
                     </AreaChart>
                 </ResponsiveContainer>
