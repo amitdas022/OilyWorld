@@ -1,0 +1,17 @@
+# binaries
+bin/
+dist/
+lib/
+node_modules/
+logs/
+
+# editors
+*.swp
+.idea/
+.vs/
+.vscode/
+.DS_Store
+
+# configs
+*-local.*
+*.log
