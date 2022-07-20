@@ -23,9 +23,6 @@ function Layout() {
             <p> </p>
         </Divider>
         <div className='rowContent'>
-            <Container style={containerOne}>
-                <img style={imgOne} src={banner_1} alt="BigCo Inc. logo"/>
-            </Container>
             <Container>
                 <p className='contentFolderOne'>
                     <span className='defHeading'>

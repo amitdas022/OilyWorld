@@ -1,4 +1,5 @@
 import * as React from 'react';
+import './App.css'
 import NavBar from './NavBar';
 import Layout from './Layout';
 import UralsCrude from './UralsCrude';
