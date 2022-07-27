@@ -1,5 +1,5 @@
 import * as React from 'react';
-
+import './NavBar.css'
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -36,7 +36,7 @@ const NavBar = () => {
   };
 
   return (
-    <AppBar position="static" style={{background: '#2E3B55'}}>
+    <AppBar className='navBar' position="static" style={{background: '#2E3B55'}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           
